@@ -14,9 +14,10 @@ def clearConsoleCommand = Command.command("clear") { state =>
 commands += clearConsoleCommand
 
 // Use Ammonite REPL instead of default scala repl
+// Use `test:console` to launch as it is in test context
 libraryDependencies += "com.lihaoyi" % "ammonite-repl" % "latest.integration" % "test" cross CrossVersion.full
 
-initialCommands in (Test, console) := """ammonite.repl.Repl.run("")"""
+initialCommands in (Test, console) := """ammonite.repl.Main.run("")"""
 
 // Shows dependency graph of project. Run `dependencyTree` or `dependencyBrowseGraph`
 // See https://github.com/jrudolph/sbt-dependency-graph
