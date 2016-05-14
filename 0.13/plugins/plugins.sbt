@@ -1,8 +1,10 @@
 resolvers += Resolver.sonatypeRepo("snapshots")
 
-addSbtPlugin("org.ensime" % "ensime-sbt" % "latest.integration")
+addSbtPlugin("de.heikoseeberger" % "sbt-fresh" % "1.0.0")
 
-addCompilerPlugin("org.scalamacros" % "paradise" % "latest.integration" cross CrossVersion.full)
+//addSbtPlugin("org.ensime" % "ensime-sbt" % "0.3.2")
 
-addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "latest.integration")
+addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.full)
+
+//addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.8.1")
 
