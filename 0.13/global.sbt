@@ -19,7 +19,3 @@ commands += clearConsoleCommand
 
 //initialCommands in (Test, console) := """ammonite.repl.Main.run("")"""
 
-// Shows dependency graph of project. Run `dependencyTree` or `dependencyBrowseGraph`
-// See https://github.com/jrudolph/sbt-dependency-graph
-// net.virtualvoid.sbt.graph.Plugin.graphSettings
-
